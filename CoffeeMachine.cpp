@@ -3,3 +3,18 @@
 //
 
 #include "CoffeeMachine.h"
+
+
+CoffeeMachine::CoffeeMachine() {
+
+}
+
+void CoffeeMachine::rechargerCafe() {
+
+}
+
+void CoffeeMachine::insererPiece(float piece) {
+
+}
+
+
