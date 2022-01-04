@@ -23,10 +23,13 @@ else
 
 void CoffeeMachine::rechargerEau() {
 capacite=3;
+cout<<"Recharge eau"<<endl;
 }
 
 void CoffeeMachine::rechargerCafe() {
+
     capacafe=2;
+    cout<<"Recharge café"<<endl;
 }
 
 void CoffeeMachine::servir() {
@@ -36,7 +39,7 @@ void CoffeeMachine::servir() {
 
         capacite-=0.15;
         capacafe-=0.10;
-        cout<<"Le café est servi";
+        cout<<"Le café est servi"<<endl;
     }
     else
         if(capacafe<0.10)
