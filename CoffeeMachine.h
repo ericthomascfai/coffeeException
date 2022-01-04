@@ -8,8 +8,8 @@
 
 class CoffeeMachine {
 private:
-    int capacite; //par défaut 3l d'eau
-    int capacafe; //par défaut 2kg
+    float capacite; //par défaut 3l d'eau
+    float capacafe; //par défaut 2kg
 
 public:
     CoffeeMachine();
