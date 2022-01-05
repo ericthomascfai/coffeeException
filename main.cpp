@@ -8,21 +8,21 @@ int main() {
    while(true)
    {
        try {
-           nespresso.insererPiece(0.4);
+           nespresso.insererPiece(0.5);
        }
        catch (invalid_argument &ia)
        {
            cout<<ia.what()<<endl;
        }
-       catch (const char* ex)
+       catch (range_error &ex)
        {
-           std::cout<<ex<<std::endl;
-           if(strcmp(ex,"plus de café")==0)
+           std::cout<<ex.what()<<std::endl;
+           if(strcmp(ex.what(),"plus de café")==0)
            {
                nespresso.rechargerCafe();
            }
            else
-           if(strcmp(ex,"plus d'eau")==0)
+           if(strcmp(ex.what(),"plus d'eau")==0)
            {
                nespresso.rechargerEau();
            }
