@@ -18,7 +18,7 @@ if(piece==0.5)
     servir();
 }
 else
-    throw "Piece invalide";
+    throw invalid_argument("piece invalide");
 }
 
 void CoffeeMachine::rechargerEau() {
@@ -43,11 +43,11 @@ void CoffeeMachine::servir() {
     }
     else
         if(capacafe<0.10)
-            throw "plus de café";
+            throw range_error("plus de café");
         else
             if(capacite<0.15)
             {
-                throw "plus d'eau";
+                throw range_error("plus d'eau");
             }
 
 
